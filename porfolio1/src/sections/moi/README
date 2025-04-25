@@ -1,0 +1,78 @@
+À propos de moi
+Introduction
+Je m'appelle [Ton Prénom], un développeur web passionné par l'innovation technologique et la création de solutions web interactives. Depuis plusieurs années, je mets mes compétences au service de projets variés, allant de la conception d'applications web modernes à la mise en place de solutions mobiles performantes. Mon objectif ? Créer des expériences utilisateurs exceptionnelles, simples et efficaces.
+
+Toujours curieux et en quête d'amélioration, je m'efforce de rester à jour avec les dernières technologies, notamment en développement web, mobile et intelligence artificielle. Ce qui me motive au quotidien, c'est résoudre des problèmes complexes en offrant des solutions élégantes et intuitives.
+
+Mon Parcours
+Diplômé en [mentionner ton diplôme] et passionné par le développement dès mon plus jeune âge, j'ai commencé mon parcours en [mentionner ton début dans le domaine, si tu as fait une reconversion ou des études spécifiques]. Ce chemin m'a conduit à me spécialiser dans les technologies suivantes : React, Node.js, Python, ainsi que le développement mobile avec React Native et Flutter.
+
+Au cours de mes expériences professionnelles, j'ai eu l'opportunité de travailler sur des projets variés, allant de la création d'applications web responsive à la mise en place de solutions de machine learning pour des entreprises. Ces expériences m'ont permis de perfectionner ma capacité à résoudre des problèmes techniques tout en restant centré sur l'utilisateur.
+
+Mes Compétences
+Développement Web Front-End : React, HTML, CSS, JavaScript, SASS, Bootstrap.
+
+Développement Back-End : Node.js, Express, RESTful APIs, GraphQL.
+
+Développement Mobile : React Native, Flutter, Firebase.
+
+Machine Learning et IA : Python, TensorFlow, PyTorch, Pandas, Scikit-learn.
+
+Outils : Git, GitHub, Webpack, Docker.
+
+Ce qui me motive
+Ce qui me passionne le plus dans le développement, c'est de créer des solutions qui ont un véritable impact. Que ce soit à travers une application mobile simplifiant la vie de ses utilisateurs ou une application web dynamique et performante, j'aime concevoir des projets qui sont à la fois innovants et utiles.
+
+En dehors de la programmation, j’aime me plonger dans l’univers de la science des données et de l’IA. La manière dont ces technologies peuvent transformer le monde me fascine, et j’aime l’idée de pouvoir intégrer ces nouvelles approches dans mes projets.
+
+Suggestions pour la mise en page et les animations GSAP
+Présentation générale avec animation de texte :
+
+Pour la présentation d'introduction, tu peux utiliser une animation de fondu enchaîné avec GSAP, où chaque ligne de texte apparaît avec un léger délai, pour garder l'attention de l'utilisateur.
+
+Exemple de code GSAP pour l'animation de texte :
+
+js
+Copier
+Modifier
+gsap.from(".intro-text", { opacity: 0, y: 50, duration: 1.5, stagger: 0.3 });
+Ce code animera chaque ligne de texte de manière fluide avec un effet de fondu et une légère translation vers le haut.
+
+Photo professionnelle avec animation :
+
+Ajoute une photo de toi à côté de la description. Utilise un effet de zoom ou rotation pour la photo lorsqu'elle apparaît au fur et à mesure que l'utilisateur fait défiler la page.
+
+Exemple de code GSAP pour l’animation de l’image :
+
+js
+Copier
+Modifier
+gsap.from(".profile-photo", { opacity: 0, scale: 0.5, duration: 1 });
+Compétences avec animation d’apparition :
+
+Pour la section compétences, chaque technologie ou outil peut apparaître avec une animation de type slide-in (glissement horizontal ou vertical). Cela peut ajouter un effet dynamique à chaque compétence présentée.
+
+Exemple de code GSAP pour une animation "slide-in" :
+
+js
+Copier
+Modifier
+gsap.from(".skills-list li", { opacity: 0, x: -50, duration: 1, stagger: 0.2 });
+Chaque élément de la liste des compétences glissera depuis la gauche avec un léger délai.
+
+Titre avec animation d’apparition :
+
+Pour le titre "À propos de moi", tu peux appliquer une animation de fade-in ou de zoom pour le rendre plus vivant. Ce type d'animation attire l'attention et donne un effet de profondeur.
+
+Exemple de code GSAP pour un titre :
+
+js
+Copier
+Modifier
+gsap.from(".about-title", { opacity: 0, scale: 0.5, duration: 1 });
+Conclusion et Call-to-Action
+Pour finir cette section, tu pourrais ajouter une petite invitation à explorer plus profondément ton portfolio et tes projets. Par exemple :
+
+Je vous invite à découvrir mes projets dans les sections suivantes pour voir comment j'applique mes compétences et résous des problèmes concrets. Si vous souhaitez collaborer ou discuter de nouvelles opportunités, n'hésitez pas à me contacter !
+
+Cela peut être lié à un bouton ou un lien vers ta section "Contact" ou vers tes projets.
