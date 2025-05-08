@@ -1,10 +1,9 @@
 import styles from "../../assets/styles/nav.module.css";
 
-
 function NavBar() {
     return (
         <nav className={styles.nav}>
-            <div className={styles.nav_div}>
+            <div className={styles.nav__container}>
                 <div className={styles.nav__logo}>
                     <img src="#" alt="logo" />
                 </div>

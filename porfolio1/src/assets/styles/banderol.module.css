@@ -1,0 +1,31 @@
+.techRibbonContainer {
+
+    left: 25%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #dd6767;
+  }
+  
+  .techRibbon {
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    transform: rotate(-45deg);
+    top: 50%;
+    left: 25%;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .techItem {
+    background: #111;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    user-select: none;
+  }
+  

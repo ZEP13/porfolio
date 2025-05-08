@@ -2,7 +2,7 @@
 .contactSection {
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 4rem 6vw;
     background-color: #f9f9f9;
     color: #111;
@@ -14,7 +14,7 @@
   @media (min-width: 992px) {
     .contactSection {
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
     }
   }
@@ -81,24 +81,9 @@
   }
   
   .contactButton:hover {
-    background-color: #333;
+    border-radius: 0;
   }
-  
-  /* Animation du fond blob SVG (identique à la section à propos) */
-  @keyframes blobAnimation {
-    0% {
-      transform: scale(1);
-      opacity: 0.3;
-    }
-    50% {
-      transform: scale(1.1);
-      opacity: 0.5;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0.3;
-    }
-  }
+
   
 
   

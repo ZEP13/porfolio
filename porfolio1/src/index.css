@@ -8,4 +8,37 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  cursor: none;
+}
+button, a {
+  cursor: none;
+}
+/* Style pour les boutons et liens */
+.cvButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #111;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* État de survol du bouton et du lien */
+.cvButton:hover{
+  background-color: #333;
+  color: #fff;
+}
+
+/* Classe qui sera ajoutée au bouton ou au lien lors du survol par le curseur */
+.cvButton.cursor-hover{
+  background-color: #fff !important; /* Fond blanc au survol */
+  color: #000 !important;            /* Texte noir */
+  border: 2px solid #000;            /* Bordure noire */
+}
+
+body::-webkit-scrollbar {
+  display: none;              
 }
