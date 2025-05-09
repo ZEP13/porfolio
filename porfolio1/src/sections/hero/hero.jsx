@@ -24,7 +24,10 @@ export default function Hero() {
     }
   };
 
-  
+  const title = useRef(null);
+  const uldiv = useRef(null);
+  const [showList, setShowList] = useState(false);
+
   return (
     <section className={styles.section}>
       <header className={styles.header}>
@@ -37,11 +40,18 @@ export default function Hero() {
       
       <div className={styles.heroName}>
         <h3 className={styles.h3Hero}>
-        <div className={styles.name}>
+        <div
+            ref={title}
+            className={styles.name}
+            onMouseEnter={() => setShowList(true)}
+            onMouseLeave={() => setShowList(false)}
+          >
             <span className={styles.name1}>LATHUY</span>  
             <span className={styles.name2}>ZEPHYR</span>
           </div>
-          <div className={styles.heroDivUL}>
+          <div  ref={uldiv}
+              className={`${styles.heroDivUL} ${showList ? styles.visibleUL : ""}`}
+            >
             <ul className={styles.listHero}>
               <li>MOTION DESIGN</li>
               <li>WEB DEVELOPMENT</li>

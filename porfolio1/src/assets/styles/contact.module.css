@@ -1,89 +1,42 @@
 /* Section Contact */
 .contactSection {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 4rem 6vw;
-    background-color: #f9f9f9;
-    color: #111;
-    gap: 4rem;
+    height: 100vh;
+    background-color: #ebebeb;
     position: relative;
-    z-index: 1;
   }
-  
-  @media (min-width: 992px) {
-    .contactSection {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-  
-  .left, .right {
-    flex: 1;
-  }
-  
-  .title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid #000;
-    padding-left: 1rem;
-  }
-  
-  .subTitle {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin: 2rem 0 1rem;
-    color: #222;
-  }
-  
-  .description {
-    margin-bottom: 2rem;
-    color: #444;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
-  
-  .contactForm {
-    display: flex;
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0 2rem 36px 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.footer div{
+  display: flex;
+  justify-content: center;
+}
+.footer a{
+  text-decoration: none;
+  color: black;
+}
+.footer > div {
+  flex: 1;
+}
+.footer li{
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .footer {
     flex-direction: column;
-    gap: 1.5rem;
-    max-width: 500px;
-    margin-top: 2rem;
-  }
-  
-  .contactInput {
-    padding: 1rem;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    color: #333;
-    transition: border-color 0.3s ease;
-  }
-  
-  .contactInput:focus {
-    outline: none;
-    border-color: #111;
-  }
-  
-  .contactButton {
-    padding: 1rem 1.5rem;
-    background-color: #111;
-    color: #fff;
-    border-radius: 50px;
-    font-weight: 500;
-    text-decoration: none;
-    margin-top: 1.5rem;
-    transition: all 0.3s ease;
+    align-items: center;
     text-align: center;
   }
-  
-  .contactButton:hover {
-    border-radius: 0;
+
+  .footer > div {
+    max-width: 100%;
   }
-
-  
-
-  
+}

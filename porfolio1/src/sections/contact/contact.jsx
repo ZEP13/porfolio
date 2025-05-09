@@ -1,42 +1,46 @@
-import styles from "../../assets/styles/contact.module.css"; // Importation des styles CSS en tant que module
+import styles from "../../assets/styles/contact.module.css";
+
+
 
 function Contact() {
     return (
         <>
             <section className={styles.contactSection}>
 
-                <div className={styles.left}>
-                    <h1 className={styles.title}>Contactez-moi</h1>
-                    <p className={styles.description}>
-                        Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter.
-                        Remplissez le formulaire ci-dessous, et je vous répondrai dans les plus brefs délais !
-                    </p>
-                </div>
-
-                <div className={styles.right}>
-                    <h2 className={styles.subTitle}>Formulaire de Contact</h2>
-                    <form className={styles.contactForm}>
-                        <input
-                            type="text"
-                            className={styles.contactInput}
-                            placeholder="Votre nom"
-                            required
-                        />
-                        <input
-                            type="email"
-                            className={styles.contactInput}
-                            placeholder="Votre email"
-                            required
-                        />
-                        <textarea
-                            className={styles.contactInput}
-                            placeholder="Votre message"
-                            rows="6"
-                            required
-                        />
-                        <a href="#" className={styles.contactButton}>Envoyer le message</a>
-                    </form>
-                </div>
+                <footer className={styles.footer}>
+                    <div className={styles.outro}>
+                        <p>
+                            Have a question, a web project in mind, or interested in connecting? I’m available for collaborations and forward-thinking digital ideas.
+                        </p>
+                    </div>
+                    <div className={styles.mail}>
+                        <ul>
+                            <li>Email</li>
+                            <li> <a href="">zephyr.lathuy@gamil.com</a></li>
+                        </ul>
+                    </div>
+                    <div className={styles.social}>
+                        <ul>
+                            <li>
+                                Social
+                            </li>
+                            <li>
+                                <a href="">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="">Linkedin</a>
+                            </li>
+                            <li>
+                                <a href="">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style={{ display: "flex", justifyContent:"flex-end" }}>Made By Zephyr Lathuy<br />
+                        © 2025 ZEPDEV 
+                        </p>
+                    </div>
+                </footer>
             </section>
         </>
     );

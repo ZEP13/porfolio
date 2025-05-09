@@ -22,7 +22,7 @@ function App() {
       scrollTrigger: {
         trigger: heroRef.current,
         start: 'top top',
-        end: '+=70%', // quand on a scrollé l'équivalent d'une hauteur de viewport
+        end: '+=70%',
         scrub: true,
         pin: true,
         
