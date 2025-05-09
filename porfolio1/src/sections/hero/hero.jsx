@@ -32,9 +32,11 @@ export default function Hero() {
     <section className={styles.section}>
       <header className={styles.header}>
         <div className={styles.headerDiv}>
-          <p className={styles.collabSpan}><span>Open for any</span><br />
-            <span>collaborations and offers</span></p>
-          <a className={styles.contactHeader} href="">CONTACT</a>
+        <p className={styles.collabSpan}>
+          <span>Open to creative collaborations</span><br />
+          <span>and meaningful opportunities</span>
+        </p>
+        <a className={styles.contactHeader} href="">CONTACT</a>
         </div>
       </header>
       
@@ -63,31 +65,28 @@ export default function Hero() {
       </div>
       <div>
         <p className={styles.descriptionHero}>
-          <span className={styles.word1}>Refined</span> Digital{" "}
+          <span className={styles.word1}>Refined</span> digital{" "}
           <span
             ref={wordRef2}
             className={styles.word2}
-            onMouseEnter={() => handleHover(wordRef2, setText2, "Experiences")}
+            onMouseEnter={() => handleHover(wordRef2, setText2, "experiences")}
           >
             {text2}
-          </span>
-          .<br />
-          <span className={styles.word3}>Passionate</span> About UI &{" "}
-          <span className={styles.word4}> Motion</span>
-          .<br />
+          </span>.<br />
+          <span className={styles.word3}>Passionate</span> about UI &{" "}
+          <span className={styles.word4}>motion</span>.<br />
           Crafting
-          <span className={styles.word5}> Intuitive</span>,{" "}
-          <span className={styles.word6}>Creative</span>{" "}
-          <span className={styles.word7}> Interfaces</span>.
+          <span className={styles.word5}> intuitive</span>,{" "}
+          <span className={styles.word6}>creative</span>{" "}
+          <span className={styles.word7}>interfaces</span>.
         </p>
       </div>
-
       <div>
         <p className={styles.descriptionPunsh}>
           <span>I DESIGN CLEAN, FLUID, AND INTELLIGENT INTERFACES.</span><br />
           <span>EVERY DETAIL MATTERS —</span><br />
           <span>FROM VISUAL CLARITY TO <a href="" className={styles.code}>CODE</a> PRECISION.</span><br />
-          <span>BLENDING AESTHETICS WITH FUNCTIONAL THINKING.</span>
+          <span>WHERE AESTHETICS MEET FUNCTIONAL THINKING.</span>
         </p>
       </div>
     </section>
