@@ -1,8 +1,89 @@
 .aboutSection {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #ebebeb;
-    z-index: 2; /* supérieur à Hero */
-  }
-  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ebebeb; /* blanc cassé japonais */
+  color: #1a1a1a;
+  font-family: 'Manrope', sans-serif;
+  z-index: 1;
+}
+
+.profile {
+  font-size: 16rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  z-index: 0;
+  letter-spacing: 1rem;
+}
+
+
+.helloDiv {
+  margin-bottom: 2rem;
+}
+
+.hello {
+  font-size: 6rem;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.1em;
+  padding-left: 5%;
+}
+
+.meDiv, .meBeyondDiv, .mePlusDiv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+}
+
+.meDiv{
+  z-index: 1;
+  opacity: 1;
+}
+.meDiv p{
+  font-size: 3.5rem;
+}
+
+
+.mePlusDiv{
+  z-index: 2;
+  opacity: 0;
+}
+.mePlusDiv p{
+  font-size: 3.5rem;
+}
+
+
+.meBeyondDiv{
+  z-index: 3;
+  opacity: 0;
+}
+.meBeyondDiv p{
+  font-size: 3.5rem;
+}
+
+.mySkills p {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+@media screen and (max-width: 1600px) {
+    .meDiv p{
+      font-size: 2.8rem;
+    }
+
+    .mePlusDiv p{
+      font-size: 2.6rem;
+    }
+
+    .meBeyondDiv p{
+      font-size: 2.6rem;
+    }
+} 

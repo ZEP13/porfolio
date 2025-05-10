@@ -6,23 +6,44 @@ export default function AboutSection() {
 
   return (
     <section className={styles.aboutSection}>
+    
+      <span className={styles.profile}>
+        PROFILE
+      </span>
+    
       <div>
-        <div>
-          <span>HELLO</span>
+        <div className={styles.helloDiv}>
+          <h1><span className={styles.hello}>HELLO</span></h1>
         </div>
+        <div className={styles.meDiv}>
           <p>
-            I'm Zephyr Lathuy, a Full Stack Web Developer based in Belgium.  
-            I see the web as a space to tell stories, shape ideas, and spark connections.
+            <span>I'm Zephyr Lathuy, </span><br />
+            <span>a Full Stack Web Developer</span><br />
+            <span>based in Pry, Belgium.</span><br />
+            <span>I see the web as a space to tell stories,</span><br />
+            <span>shape ideas, and spark connections.</span>
           </p>
+        </div>
+        <div className={styles.mePlusDiv}>
           <p>
-            I design and build digital experiences from front-end to back-end, blending emotion, clarity, and purpose.  
-            Each project is a chance to learn, collaborate, and turn ideas into scalable, meaningful products.
+            <span>I design and build digital experiences from front-end to back-end,</span><br />
+            <span>blending emotion, clarity, and purpose.</span><br />
+            <span>Each project is a chance to learn, collaborate, and turn</span><br />
+            <span>ideas into scalable, meaningful products.</span> 
           </p>
+        </div>
+        <div className={styles.meBeyondDiv}>
           <p>
-            Beyond web development, I’m passionate about Machine and Deep Learning.  
-            As AI becomes essential in modern applications, I’m driven to explore how intelligent systems can enhance user experiences and functionality.
+            <span>Beyond web development, I’m passionate about Machine and Deep Learning.</span><br />
+            <span>As AI becomes essential in modern applications, I’m driven to explore how</span><br />
+            <span>intelligent systems can enhance user experiences and functionality.</span>
           </p>
+        </div>
+      </div>
+      <div className={styles.mySkills}>
+        <p>
 
+        </p>
       </div>
     </section>
   );

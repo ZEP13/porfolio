@@ -6,11 +6,11 @@ import Hero from './sections/hero/hero.jsx';
 import Contact from './sections/contact/contact.jsx';
 import GestureSection from './sections/ia/ia.jsx';
 import AboutSection from './sections/about/about.jsx';
-import Projects from './sections/project/project.jsx';
+// import Projects from './sections/project/project.jsx';
 import CustomCursor from './components/cursor.jsx';
 import TechRibbon from './sections/project/banderol.jsx';
 // import SkillsSection from './sections/skills/skills.jsx';
-import SkillsSection from './sections/skills/skills.jsx';
+
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
         <AboutSection />
       </div>
       {/* <SkillsSection/> */}
-      <Projects />
+      {/* <Projects /> */}
 
       <Contact />
       <CustomCursor />
