@@ -1,13 +1,17 @@
 .aboutSection {
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #ebebeb; /* blanc cassé japonais */
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb; 
   color: #1a1a1a;
   font-family: 'Manrope', sans-serif;
-  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
 }
-
 .profile {
   font-size: 16rem;
   color: #ffffff;
@@ -44,7 +48,6 @@
 
 .meDiv{
   z-index: 1;
-  opacity: 1;
 }
 .meDiv p{
   font-size: 3.5rem;
@@ -53,7 +56,6 @@
 
 .mePlusDiv{
   z-index: 2;
-  opacity: 0;
 }
 .mePlusDiv p{
   font-size: 3.5rem;
@@ -62,7 +64,6 @@
 
 .meBeyondDiv{
   z-index: 3;
-  opacity: 0;
 }
 .meBeyondDiv p{
   font-size: 3.5rem;
@@ -70,7 +71,7 @@
 
 .mySkills p {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   color: #666;
 }
 
@@ -86,4 +87,4 @@
     .meBeyondDiv p{
       font-size: 2.6rem;
     }
-} 
+}

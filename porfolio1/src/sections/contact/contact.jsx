@@ -2,11 +2,13 @@ import styles from "../../assets/styles/contact.module.css";
 
 
 
-function Contact() {
+export default function Contact() {
     return (
         <>
             <section className={styles.contactSection}>
-
+                <span className={styles.contact}>
+                    CONTACT
+                </span>
                 <footer className={styles.footer}>
                     <div className={styles.outro}>
                         <p>
@@ -46,4 +48,3 @@ function Contact() {
     );
 }
 
-export default Contact;

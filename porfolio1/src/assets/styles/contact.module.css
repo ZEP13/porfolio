@@ -1,9 +1,21 @@
 /* Section Contact */
 .contactSection {
     height: 100vh;
-    background-color: #3a0303;
+    background-color: #ebebeb;
     position: relative;
   }
+
+.contact{
+  font-size: 14rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  z-index: 0;
+  letter-spacing: 1rem;
+}
 .footer{
   position: absolute;
   width: 100%;
