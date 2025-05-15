@@ -8,6 +8,8 @@ import GestureSection from './sections/ia/ia.jsx';
 import AboutSection from './sections/about/about.jsx';
 import Projects from './sections/project/project.jsx';
 import CustomCursor from './components/cursor.jsx';
+import Vision from './sections/vision/vision.jsx';
+
 // import TechRibbon from './sections/project/banderol.jsx';
 // import SkillsSection from './sections/skills/skills.jsx';
 
@@ -18,7 +20,7 @@ function App() {
     <div>
       <Hero />
       <AboutSection />
-
+      <Vision />
       {/* <SkillsSection/> */}
       <Projects />
 

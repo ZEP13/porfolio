@@ -24,9 +24,19 @@
   letter-spacing: 1rem;
 }
 
+.line {
+  width: 0;
+  height: 2px; /* ou une autre valeur selon votre design */
+  background-color: #000; /* ou la couleur de votre choix */
+  position: relative; /* nécessaire pour certaines animations */
+}
+
 
 .helloDiv {
   margin-bottom: 2rem;
+  position: absolute;
+  top: 2%;
+  left: 4%;
 }
 
 .hello {
@@ -62,9 +72,17 @@
 }
 
 
-.meBeyondDiv{
-  z-index: 3;
+.meBeyondDiv {
+  --bg-pos: 0%;
+  background: linear-gradient(125deg, black 50%, gray 50%);
+  background-size: 200% 200%;
+  background-position: var(--bg-pos) var(--bg-pos);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
+
 .meBeyondDiv p{
   font-size: 3.5rem;
 }

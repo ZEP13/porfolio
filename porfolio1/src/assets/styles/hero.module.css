@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 4vh;
 }
 .collabSpan{
     font-size: 0.8rem;
@@ -102,7 +102,7 @@
 .descriptionHero {
     position: absolute;
     bottom:1rem;
-    left: 2rem;
+    left: 4vh;
     z-index: 10;
     line-height: 5rem; 
     font-size: 3rem;

@@ -1,0 +1,68 @@
+.visionSection {
+  height: 100vh;
+  width: 100%;
+  background-color: #ebebeb; 
+  position: relative;
+}
+
+.vision {
+  font-size: 16rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  z-index: 0;
+  letter-spacing: 1rem;
+}
+.visionContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+.visionHeader{
+    width: 40%;
+    height: 100vh;
+    padding: 8.6vh 0 0 4vh;
+}
+
+.span1{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+}
+.span2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 200;
+    
+}
+
+.visionStep{
+    padding-top: 5rem;
+    width: 33.3%;
+    height: auto;
+}
+
+.stepTitle{
+    font-size: 2rem;
+}
+
+.stepContent{
+    padding: 3rem 0 22vh 0;
+    width: 70%;
+    padding-left: 12vh;
+}
+
+.step p{
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
