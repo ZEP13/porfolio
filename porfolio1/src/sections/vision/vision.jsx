@@ -57,7 +57,7 @@ export default function Vision(){
                             <p>
                                 For me, every successful project starts with a deep understanding of the client and their vision.
                                 At this stage, I focus on defining clear goals and technical requirements, researching the competitive landscape, and identifying the target audience.
-                                This discovery phase allows me to align strategy with creativity—to find the right balance between typography, color, motion, and brand identity.
+                                This discovery phase allows me to align strategy with creativity to find the right balance between typography, color, motion, and brand identity.
                                 It’s a critical foundation that helps uncover meaningful directions and design solutions that truly resonate.
                             </p>
                         </div>
@@ -74,7 +74,7 @@ export default function Vision(){
                         </div>
                     </div>
                     <div className={styles.step}>
-                        <div className={styles.stepTitle}>Crafting the Experience with Motion</div>
+                        <div className={styles.stepTitle}>Crafting the Experience</div>
                         <div className={styles.stepContent}>
                             <p>
                                 I believe that motion and interaction are essential to creating truly engaging digital experiences.
@@ -89,8 +89,8 @@ export default function Vision(){
                         <div className={styles.stepContent}>
                             <p>
                                 My role extends far beyond the design phase in Figma or prototyping. As a designer, I ensure the final product is meticulously executed, aligning perfectly with the intended design vision.
-                                Every detail—from spacing and typography to motion, interaction, and responsiveness—must be flawlessly implemented across all devices and platforms.
-                                I am committed to delivering a seamless, high-performance user experience, ensuring that the design is not only visually accurate but also fully functional and intuitive.
+                                Every detail from spacing and typography to motion, interaction, and responsiveness must be flawlessly implemented across all devices and platforms.
+                                I am committed to delivering a seamless, high performance user experience, ensuring that the design is not only visually accurate but also fully functional and intuitive.
                             </p> 
                         </div>
                     </div>

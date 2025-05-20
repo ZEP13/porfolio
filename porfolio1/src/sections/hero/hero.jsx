@@ -52,7 +52,7 @@ export default function Hero() {
             <span className={styles.name2}>ZEPHYR</span>
           </div>
           <div  ref={uldiv}
-              className={`${styles.heroDivUL} ${showList ? styles.visibleUL : ""}`}
+              className={`${styles.heroDivUL} ${showList ? styles.inVisibleUL : ""}`}
             >
             <ul className={styles.listHero}>
               <li>MOTION DESIGN</li>
@@ -84,8 +84,8 @@ export default function Hero() {
       <div>
         <p className={styles.descriptionPunsh}>
           <span>I DESIGN CLEAN, FLUID, AND INTELLIGENT INTERFACES.</span><br />
-          <span>EVERY DETAIL MATTERS —</span><br />
-          <span>FROM VISUAL CLARITY TO <a href="" className={styles.code}>CODE</a> PRECISION.</span><br />
+          <span>EVERY DETAIL MATTERS FROM-</span><br />
+          <span>VISUAL CLARITY TO <a href="" className={styles.code}>CODE</a> PRECISION.</span><br />
           <span>WHERE AESTHETICS MEET FUNCTIONAL THINKING.</span>
         </p>
       </div>

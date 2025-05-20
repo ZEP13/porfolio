@@ -1,17 +1,55 @@
 .sectionProject {
   position: relative;
   height: 100vh;
-  background-color: #ebebeb;
+  background-color: #ebebeb; /* Changé en noir pour le texte blanc */
+  overflow: hidden;
 }
 
-.works{
+/* Le contenu qui défile dans la section pinnée */
+.imgContainer {
+  position: relative;
+  height: 400vh; /* Augmenté pour correspondre au ScrollTrigger */
+  width: 100%;
+  overflow: visible;
+}
+
+/* Le mot WORKS reste centré et fixe */
+.works {
   font-size: 16rem;
   color: #ffffff;
-  position: absolute;
+  position: absolute; /* changé de fixed à absolute */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: center;
-  z-index: 0;
+  z-index: 1;
   letter-spacing: 1rem;
+  pointer-events: none;
+}
+
+/* Ajustement des positions initiales des images */
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10 {
+  position: absolute;
+  will-change: transform;
+  transition: transform 0.3s ease;
+  transform: none; /* Retiré le translateY initial */
+}
+
+/* Répartition des images en pourcentage sur la hauteur totale */
+.img1 { width: 40vh; height: 60vh; top: 2.5%; left: 5%; background-color: aliceblue; }
+.img2 { width: 30vh; height: 50vh; top: 10%; left: 25%; background-color: #a7b4be; }
+.img3 { width: 35vh; height: 30vh; top: 17.5%; left: 55%; background-color: #5c98cc; }
+.img4 { width: 25vh; height: 25vh; top: 25%; left: 10%; background-color: #6fa35f; z-index: 3;}
+.img5 { width: 50vh; height: 25vh; top: 32.5%; left: 70%; background-color: #b88271; }
+.img6 { width: 20vh; height: 45vh; top: 40%; left: 50%; background-color: #1d6e7c; }
+.img7 { width: 35vh; height: 35vh; top: 47.5%; left: 80%; background-color: rgba(114, 143, 168, 0.8); }
+.img8 { width: 45vh; height: 30vh; top: 55%; left: 20%; background-color: #71962d; }
+.img9 { width: 30vh; height: 30vh; top: 62.5%; left: 35%; background-color: #b9a150; }
+.img10 { width: 25vh; height: 55vh; top: 70%; left: 85%; background-color: #4e6579; }
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, 
+.img5:hover, .img6:hover, .img7:hover, .img8:hover, 
+.img9:hover, .img10:hover {
+  transform: scale(1.05);
+  z-index: 20;
 }
