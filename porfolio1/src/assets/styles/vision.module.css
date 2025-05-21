@@ -27,10 +27,12 @@
 }
 
 
-.visionHeader{
+.visionHeader {
     width: 40%;
-    height: 100vh;
-    padding: 8.6vh 0 0 4vh;
+    position: absolute;
+    top: 8.6vh;
+    left: 4vh;
+    z-index: 2;
 }
 
 .span1{
@@ -44,25 +46,38 @@
     font-weight: 200;
 }
 
-.visionStep{
+.visionStep {
     padding-top: 5rem;
     width: 33.3%;
-    height: auto;
+    height: 200vh; /* Définir une hauteur fixe */
     padding-right: 2rem;
 }
 
-.stepTitle{
-    font-size: 2rem;
+.title{
+    font-size: 4rem;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
+    color: #666;
 }
 
-.stepContent{
-    padding: 3rem 0 22vh 0;
-    width: 70%;
-    padding-left: 12vh;
+.step {
+    margin-bottom: 60vh; 
+    position: relative;
+}
+
+.stepContent {
+    width: 50%;
+    margin-left: 15vh;
+    min-height: 40vh;
+    border-radius: 16px;
+    backdrop-filter: blur(3.4px);
 }
 
 .step p{
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.4rem;
 }

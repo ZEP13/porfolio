@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Hero from './sections/hero/hero.jsx';
 import Contact from './sections/contact/contact.jsx';
-import GestureSection from './sections/ia/ia.jsx';
 import AboutSection from './sections/about/about.jsx';
 import Projects from './sections/project/project.jsx';
 import CustomCursor from './components/cursor.jsx';
@@ -21,12 +20,9 @@ function App() {
       <Hero />
       <AboutSection />
       <Vision />
-      {/* <SkillsSection/> */}
       <Projects />
-
       <Contact />
       <CustomCursor />
-
     </div>
   );
 }

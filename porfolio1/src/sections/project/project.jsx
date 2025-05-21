@@ -20,21 +20,27 @@ export default function Projects() {
   const img8Ref = useRef(null);
   const img9Ref = useRef(null);
   const img10Ref = useRef(null);
-
- useEffect(() => {
+useEffect(() => {
   let ctx = gsap.context(() => {
-    // Pin la section entière avec une hauteur plus grande
-    ScrollTrigger.create({
-      trigger: workSection.current,
-      start: "top top",
-      end: "+=400%", // Augmenté pour plus d'espace de défilement
-      pin: true,
-      scrub: 1,
-      pinSpacing: true,
-      markers: true // Pour déboguer les points de déclenchement
-    });
+    // 1. Animation du container : il traverse la section pendant 400% de scroll
+    gsap.fromTo(
+      imgContainerRef.current,
+      { y: 0 },
+      {
+        y: "-300vh", // imgContainer = 400vh, section = 100vh => on le "fait défiler" sur toute sa hauteur
+        ease: "none",
+        scrollTrigger: {
+          trigger: workSection.current,
+          start: "top top",
+          end: "+=400%",
+          scrub: true,
+          pin: true,
+          markers: true
+        }
+      }
+    );
 
-    // Configuration des vitesses différentes pour chaque image
+    // 2. Animation des images à l’intérieur du container
     const images = [
       { ref: img1Ref, speed: 0.3, distance: -200 },
       { ref: img2Ref, speed: 0.8, distance: -300 },
@@ -45,26 +51,27 @@ export default function Projects() {
       { ref: img7Ref, speed: 0.6, distance: -270 },
       { ref: img8Ref, speed: 1.0, distance: -340 },
       { ref: img9Ref, speed: 0.7, distance: -290 },
-      { ref: img10Ref, speed: 0.2, distance: -230 }
+      { ref: img10Ref, speed: 1.4, distance: -310 }
     ];
 
-    // Application des animations avec des vitesses différentes
+    // 3. Chaque image garde sa vitesse personnalisée pendant le scroll
     images.forEach(({ ref, speed, distance }) => {
-      gsap.fromTo(ref.current,
+      gsap.fromTo(
+        ref.current,
         {
-          y: window.innerHeight // Commence en bas de la fenêtre
+          y:  window.innerHeight
         },
         {
-          y: distance * speed * 3, // Distance parcourue plus importante
+          y: distance * speed,
           ease: "none",
           scrollTrigger: {
             trigger: workSection.current,
-            start: "top bottom", // Commence quand le haut de la section atteint le bas de la fenêtre
-            end: "bottom top", // Finit quand le bas de la section atteint le haut de la fenêtre
-            scrub: true,
-            markers: true // Pour déboguer
+            start: "top top",
+            end: "+=400%", // même durée que le pin
+            scrub: true
           }
-        });
+        }
+      );
     });
   });
 

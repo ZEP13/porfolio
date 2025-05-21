@@ -6,18 +6,27 @@
 }
 
 /* Le contenu qui défile dans la section pinnée */
-.imgContainer {
+.sectionProject {
   position: relative;
-  height: 400vh; /* Augmenté pour correspondre au ScrollTrigger */
-  width: 100%;
-  overflow: visible;
+  height: 100vh; /* section visible */
+  overflow: hidden;
 }
+
+.imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300vh; /* 4x la taille de la section */
+  width: 100%;
+  z-index: 0;
+}
+
 
 /* Le mot WORKS reste centré et fixe */
 .works {
   font-size: 16rem;
   color: #ffffff;
-  position: absolute; /* changé de fixed à absolute */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -32,7 +41,6 @@
   position: absolute;
   will-change: transform;
   transition: transform 0.3s ease;
-  transform: none; /* Retiré le translateY initial */
 }
 
 /* Répartition des images en pourcentage sur la hauteur totale */
@@ -47,9 +55,3 @@
 .img9 { width: 30vh; height: 30vh; top: 62.5%; left: 35%; background-color: #b9a150; }
 .img10 { width: 25vh; height: 55vh; top: 70%; left: 85%; background-color: #4e6579; }
 
-.img1:hover, .img2:hover, .img3:hover, .img4:hover, 
-.img5:hover, .img6:hover, .img7:hover, .img8:hover, 
-.img9:hover, .img10:hover {
-  transform: scale(1.05);
-  z-index: 20;
-}
