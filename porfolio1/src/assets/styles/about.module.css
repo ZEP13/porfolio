@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ebebeb; 
-  color: #1a1a1a;
+  background-color: #b2b6bb; 
+  color: #111212;
   font-family: 'Manrope', sans-serif;
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@
 }
 .profile {
   font-size: 16rem;
-  color: #ffffff;
+  color: #e7e9ea;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,12 +24,6 @@
   letter-spacing: 1rem;
 }
 
-.line {
-  width: 0;
-  height: 2px; /* ou une autre valeur selon votre design */
-  background-color: #000; /* ou la couleur de votre choix */
-  position: relative; /* nécessaire pour certaines animations */
-}
 
 
 .helloDiv {
@@ -43,7 +37,7 @@
   font-size: 6rem;
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
-  color: #111111;
+  color: #7c7f82;
   letter-spacing: 0.1em;
   padding-left: 5%;
 }
@@ -54,6 +48,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: center;
+  backdrop-filter: blur(3.4px);
 }
 
 .meDiv{
@@ -71,18 +66,9 @@
   font-size: 3.5rem;
 }
 
-
-.meBeyondDiv {
-  --bg-pos: 0%;
-  background: linear-gradient(125deg, black 50%, gray 50%);
-  background-size: 200% 200%;
-  background-position: var(--bg-pos) var(--bg-pos);
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+.meBeyondDiv{
+  z-index: 3;
 }
-
 .meBeyondDiv p{
   font-size: 3.5rem;
 }
