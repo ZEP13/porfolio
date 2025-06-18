@@ -40,7 +40,7 @@
   padding-left: 5%;
 }
 
-.meBeyondDiv, .mePlusDiv {
+.meBeyondDiv {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,18 +72,26 @@
   will-change: transform, opacity;
 }
 
-.mePlusDiv{
+.mePlusDiv {
   z-index: 2;
+  position: absolute;
+  right: 1%;
+  padding: 0 1vh;
+  max-width: 1200px;
+  min-width: 300px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mePlusDiv p{
-  font-size: 3.5rem;
-  line-height: 1.4;
+  font-size: 5rem;
+  line-height: 1.6;
 }
 
 
 .meBeyondDiv{
   z-index: 3;
+
 }
 .meBeyondDiv p{
   font-size: 3.5rem;
@@ -97,7 +105,7 @@
 
 .fillSpan {
   --fill-progress: 0%;
-  background: linear-gradient(45deg, 
+  background: linear-gradient(90deg, 
     #111212 var(--fill-progress), 
     #7c7f82 var(--fill-progress)
   );
@@ -114,11 +122,36 @@
       font-size: 2.8rem;
     }
 
+    .mePlusDiv {
+      right: 5%;
+      width: 60%;
+    }
     .mePlusDiv p{
-      font-size: 2.8rem;
+      font-size: 4rem;
     }
 
     .meBeyondDiv p{
       font-size: 2.6rem;
     }
+}
+
+@media screen and (max-width: 1200px) {
+  .mePlusDiv {
+    right: 1%;
+    width: 70%;
+  }
+  .mePlusDiv p {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mePlusDiv {
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 90%;
+  }
+  .mePlusDiv p {
+    font-size: 2.8rem;
+  }
 }

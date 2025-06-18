@@ -27,13 +27,13 @@ export default function Contact() {
                                 Social
                             </li>
                             <li>
-                                <a href="">Instagram</a>
-                            </li>
-                            <li>
                                 <a href="">Linkedin</a>
                             </li>
                             <li>
                                 <a href="">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="">Kaggle</a>
                             </li>
                         </ul>
                     </div>

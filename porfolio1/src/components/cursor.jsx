@@ -9,7 +9,8 @@ const CustomCursor = () => {
   const ringPos = useRef({ x: 0, y: 0 });
 
   const isHoveringTarget = useRef(false);
-
+  const isHoveringImg = useRef(false);
+  
   useEffect(() => {
     const handleMouseMove = (e) => {
       mouse.current = { x: e.clientX, y: e.clientY };
@@ -17,17 +18,23 @@ const CustomCursor = () => {
 
     const handleMouseOver = (e) => {
       const target = e.target;
-      if (target.tagName === "A" || target.tagName === "BUTTON") {
+      if (target.tagName === "A" || target.tagName === "BUTTON" || target.tagName === "IMG") {
         isHoveringTarget.current = true;
-        target.classList.add("cursor-hover"); // Ajout d'une classe pour les boutons et liens
+        target.classList.add("cursor-hover");
+      }
+      if (target.tagName === "IMG") {
+        isHoveringImg.current = true;
       }
     };
 
     const handleMouseOut = (e) => {
       const target = e.target;
-      if (target.tagName === "A" || target.tagName === "BUTTON") {
+      if (target.tagName === "A" || target.tagName === "BUTTON"|| target.tagName === "IMG") {
         isHoveringTarget.current = false;
-        target.classList.remove("cursor-hover"); // Retirer la classe quand on sort du bouton
+        target.classList.remove("cursor-hover");
+      }
+      if (target.tagName === "IMG") {
+        isHoveringImg.current = false;
       }
     };
 
@@ -62,6 +69,8 @@ const CustomCursor = () => {
           ring.style.mixBlendMode = "difference"; // Effet de découpe du bouton (loupe inversée)
           ringRef.current.style.transform = `translate(${ringPos.current.x - 35}px, ${ringPos.current.y - 35}px)`;
           dot.style.backgroundColor = "transparent"; // Le petit point devient transparent
+        } else if (isHoveringImg.current) {
+          ring.style.transform += " scale(3.15)";
         } else {
           // Retour à l'état normal
           ring.style.width = "30px";
