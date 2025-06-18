@@ -24,8 +24,6 @@
   letter-spacing: 1rem;
 }
 
-
-
 .helloDiv {
   margin-bottom: 2rem;
   position: absolute;
@@ -34,7 +32,7 @@
 }
 
 .hello {
-  font-size: 6rem;
+  font-size: 8rem;
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
   color: #7c7f82;
@@ -42,29 +40,47 @@
   padding-left: 5%;
 }
 
-.meDiv, .meBeyondDiv, .mePlusDiv{
+.meBeyondDiv, .mePlusDiv {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: center;
   backdrop-filter: blur(3.4px);
+  will-change: transform, opacity;
+  transition: all 0.3s ease-out;
 }
 
-.meDiv{
+.meDiv {
   z-index: 1;
-}
-.meDiv p{
-  font-size: 3.5rem;
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  width: 115vh;
 }
 
+.meDiv p {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.meDiv span {
+  display: inline-block;
+  opacity: 0;
+  will-change: transform, opacity;
+}
 
 .mePlusDiv{
   z-index: 2;
 }
+
 .mePlusDiv p{
   font-size: 3.5rem;
+  line-height: 1.4;
 }
+
 
 .meBeyondDiv{
   z-index: 3;
@@ -79,13 +95,27 @@
   color: #666;
 }
 
+.fillSpan {
+  --fill-progress: 0%;
+  background: linear-gradient(45deg, 
+    #111212 var(--fill-progress), 
+    #7c7f82 var(--fill-progress)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  will-change: background;
+  transition: background 0.3s ease-out;
+}
+
 @media screen and (max-width: 1600px) {
     .meDiv p{
       font-size: 2.8rem;
     }
 
     .mePlusDiv p{
-      font-size: 2.6rem;
+      font-size: 2.8rem;
     }
 
     .meBeyondDiv p{

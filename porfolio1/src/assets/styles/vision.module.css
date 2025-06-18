@@ -1,13 +1,14 @@
 .visionSection {
   height: 100vh;
   width: 100%;
-  background-color: #ebebeb; 
+  background-color: #e7e9ea; 
   position: relative;
 }
 
 .vision {
   font-size: 16rem;
-  color: #ffffff;
+  opacity: 0.25;
+  color: #b2b6bb;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,7 +61,7 @@
     left: 10%;
     font-family: 'DM Serif Display', serif;
     font-weight: 100;
-    color: #666;
+    color: #7c7f82;
 }
 
 .step {

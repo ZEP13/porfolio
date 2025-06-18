@@ -1,6 +1,6 @@
 .section{
     height: 100vh;
-    background-color: #ebebeb;
+    background-color: #e7e9ea;
 }
 .header{
     position: absolute;
@@ -21,7 +21,7 @@
     font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    color: #111212;
 }
 
 .heroName {
@@ -43,7 +43,7 @@
     width: 100%;
     padding: 0.1rem 2rem;
     z-index: 10;
-    background-color: #ebebeb;
+    background-color: #e7e9ea;
     opacity: 1;
     transition: opacity 0.4s ease, transform 0.4s ease;
   }
@@ -64,10 +64,10 @@
 }
 .listHero li {
     font-size: 0.8rem;
-    color: black;
+    color: #111212;
 }
 .h3Hero{
-    color: #ffffff;
+    color: #b2b6bb;
 }
 .name{
     transition: transform 0.2s ease-out;

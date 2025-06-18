@@ -1,7 +1,7 @@
 .sectionProject {
   position: relative;
   height: 100vh;
-  background-color: #ebebeb; /* Changé en noir pour le texte blanc */
+  background-color: #b2b6bb; /* Changé en noir pour le texte blanc */
   overflow: hidden;
 }
 
@@ -25,7 +25,8 @@
 /* Le mot WORKS reste centré et fixe */
 .works {
   font-size: 16rem;
-  color: #ffffff;
+  color: #e7e9ea;
+  opacity: 0.85;
   position: absolute;
   top: 50%;
   left: 50%;
