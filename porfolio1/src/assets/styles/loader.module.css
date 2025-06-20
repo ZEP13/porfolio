@@ -1,0 +1,46 @@
+.section{
+    height: 100vh;
+    background-color: #e7e9ea;
+    
+}
+
+.h3Hero{
+    color: #b2b6bb;
+}
+.heroName {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    z-index: 0;
+}
+.name{
+    transition: transform 0.2s ease-out;
+    will-change: transform;    
+    font-size: 11rem;
+}
+.name1{
+    display: inline-block;
+    transform: translate3d(-1.5%,-7%,0);
+    font-size: inherit;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #b2b6bb;
+}
+.name2{
+    display: inline-block;
+    transform: translate3d(1.5%,5%,0);
+    font-family: "Aboreto", system-ui;
+    font-weight: 200;
+    font-size: inherit;
+    margin-left: 1vw;
+    color: #b2b6bb;
+}
+@media screen and (max-width: 1600px) {
+    .heroName{
+      font-size: 8.5rem;
+    }
+}

@@ -1,11 +1,18 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import styles from "../../assets/styles/hero.module.css";
 import ScrambleText from "scramble-text";
 
 export default function Hero() {
-
   const wordRef2 = useRef(null);
   const [text2, setText2] = useState("Experiences");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleHover(wordRef2, setText2, "Experiences");
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleHover = (ref, setText, originalText) => {
     if (ref.current) {
